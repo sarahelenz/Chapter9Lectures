@@ -7,6 +7,26 @@ public class Time {
         second = 15;
     }
 
+    public Time(int hour, int minute, int second){
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+
+        //alternatives
+        setTime(12, 30, 12);
+
+        this(12,30,15);
+
+    }
+
+    public void setTime(int hour, int minute, int second){
+        if(hour >= 0 && hour <= 12)
+            this.hour = hour;
+        if(minute >= 0 && minute <= 59)
+            this.minute = minute;
+        if(second >= 0 && second <= 59)
+            this.second = second;
+    }
     public int getHour() {
         return hour;
     }
