@@ -15,7 +15,7 @@ public class Time {
         //alternatives
         setTime(12, 30, 12);
 
-        this(12,30,15);
+      //  this(12,30,15);
         //has to be first line of code
     }
 
