@@ -16,7 +16,7 @@ public class Time {
         setTime(12, 30, 12);
 
         this(12,30,15);
-
+        //has to be first line of code
     }
 
     public void setTime(int hour, int minute, int second){
