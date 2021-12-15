@@ -18,6 +18,14 @@ public class Time {
       //  this(12,30,15);
         //has to be first line of code
     }
+    public Time(Time t){
+        this.hour = t.hour;
+        this.minute = t.minute;
+        this.second = t.second;
+
+        //alternative
+        setTime(t.hour,  t.minute, t.second);
+    }
 
     public void setTime(int hour, int minute, int second){
         if(hour >= 0 && hour <= 12)
