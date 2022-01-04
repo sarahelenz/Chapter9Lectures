@@ -1,11 +1,12 @@
 public class RightTriangle {
     private int a, b, c;
-
+    //default constructor
     public RightTriangle(){
         a = 1;
         b = 1;
         c = 1;
     }
+    //another constructor that adds values automatically
     public RightTriangle(int a, int b, int c){
         if(a > 0 && b > 0 && c >0) {
             this.a = a;
@@ -13,6 +14,7 @@ public class RightTriangle {
             this.c = c;
         }
     }
+    //copy constructor
     public RightTriangle(RightTriangle s){
         this.a = s.a;
         this.b = s.b;
