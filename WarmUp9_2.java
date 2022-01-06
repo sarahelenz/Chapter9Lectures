@@ -23,6 +23,6 @@ public class WarmUp9_2 {
         halogen.isOn();
 
         led.decreaseTemperatureBy(200);
-        System.out.println(halogen.increaseTemperatureBy(1000));
+        halogen.increaseTemperatureBy(1000);
     }
 }
