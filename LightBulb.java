@@ -1,6 +1,6 @@
 public class LightBulb {
-   boolean onOrOff;
-   int temperature;
+   private boolean onOrOff;
+   private int temperature;
     public LightBulb(){
         onOrOff = false;
         temperature = 0;
@@ -30,14 +30,14 @@ public class LightBulb {
     }
     public int decreaseTemperatureBy(int x){
         if(this.temperature >= 0 && this.temperature <= 5000) {
-            return temperature - x;
+            return temperature -= x;
         }else{
             return this.temperature;
         }
     }
     public int increaseTemperatureBy(int x){
         if(this.temperature >= 0 && this.temperature <= 5000) {
-            return temperature + x;
+            return temperature += x;
         }else {
             return this.temperature;
         }
