@@ -1,4 +1,31 @@
+import java.util.ArrayList;
+
 public class Time {
+    public ArrayList<Integer> time;
+
+    public Time(){
+        time = new ArrayList<Integer>();
+        time.add(12);
+        time.add(0);
+        time.add(0);
+        //alternate
+        //this(12,0,0);
+    }
+
+    public Time(int hour, int minute, int second){
+        time = new ArrayList<Integer>();
+        time.add(hour);
+        time.add(minute);
+        time.add(second);
+    }
+
+    public Time(Time t){
+        this(t.time.get(0), t.time.get(1), t.time.get(2));
+    }
+
+    public String toString(){
+        return time.get(0) + ":" + time.get(1) + ":" + time.get(2);
+    }
 
 //    private int hour, minute, second;
 //
